@@ -1,0 +1,53 @@
+Total facilities: 134
+Total detainee population: 40423.91
+
+===== FACILITY SIZE DISTRIBUTION =====
+Facility_Size
+Very Small (<100)    55.970149
+Small (100-499)      19.402985
+Medium (500-999)     16.417910
+Large (1000+)         8.208955
+Name: proportion, dtype: float64
+
+Percentage of Large facilities: 8.21%
+Majority facility size category: Very Small (<100) at 55.97%
+
+===== SECURITY LEVEL PATTERNS =====
+Level A: 60.61%
+Level B: 13.29%
+Level C: 14.83%
+Level D: 11.27%
+
+===== GEOGRAPHIC CONCENTRATION =====
+Top states by detention population:
+1. TX: 30.19%
+2. LA: 17.38%
+3. CA: 7.63%
+4. GA: 6.31%
+5. AZ: 5.71%
+
+Top three states account for 55.19% of total detention population
+
+Top states by number of facilities:
+1. TX: 23 facilities
+2. LA: 9 facilities
+3. FL: 9 facilities
+4. CA: 6 facilities
+5. PA: 5 facilities
+/Users/aayushadhikari/data-screening-exercise/verify_claims.py:127: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  valid_inspection_dates['Days_Since_Inspection'] = (today - valid_inspection_dates['Last_Inspection_Date_Parsed']).dt.days
+
+===== INSPECTION TIMING =====
+Median days since last inspection: 185
+Mean days since last inspection: 215
+Min days since last inspection: 45
+Max days since last inspection: 1486
+Standard deviation: 188
+
+===== DATA QUALITY ISSUES =====
+Number of facilities with data quality issues: 2
+Percentage of facilities with data quality issues: 1.49%
