@@ -37,7 +37,7 @@ raw_data <- read_csv(
 )
 ```
 
-The revelation that the first 7 rows contained metadata instead of actual data was my first "aha" moment. Reading the file with `skip = 7` was essential to properly align the columns.
+The revelation that the first 7 rows contained metadata instead of actual data was my first "aha" moment. Reading the file with `skip = 7` was essential to properly align the columns. Note that I've explicitly defined the column headings in the `col_names` parameter rather than using the 7th row as headers, as the 7th row contained the actual column names but I wanted to ensure consistency and proper naming convention.
 
 #### 2. Name Cleaning & Standardization
 
